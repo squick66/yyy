@@ -6,6 +6,8 @@ public class Main {
             System.out.print(index + " ");
         }
 
-        int b;
+        for (int i = 0; i <tab.length ; i++) {
+            System.out.println(tab[i] + 5);
+        }
     }
 }
