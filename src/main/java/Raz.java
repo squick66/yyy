@@ -23,4 +23,12 @@ public class Raz {
     public void setRocznik(int rocznik) {
         this.rocznik = rocznik;
     }
+
+    @Override
+    public String toString() {
+        return "Raz{" +
+                "marka='" + marka + '\'' +
+                ", rocznik=" + rocznik +
+                '}';
+    }
 }
