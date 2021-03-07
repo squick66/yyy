@@ -21,5 +21,6 @@ public class Main {
 
         Raz raz1 = new Raz("auto1", 2010);
         System.out.println(raz1.firstLetter());
+        30a1b6b... Utworzenie metody rename.
     }
 }
