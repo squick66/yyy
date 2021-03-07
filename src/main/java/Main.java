@@ -13,7 +13,10 @@ public class Main {
         int b = 1;
         for (int i = 0; i <tab.length ; i++) {
             tab[i]=tab[i] + b;
-            System.out.println(tab[i]);
+            System.out.print(tab[i] + " ");
         }
+
+        Raz raz1 = new Raz("auto1", 2010);
+        System.out.println(raz1.firstLetter());
     }
 }

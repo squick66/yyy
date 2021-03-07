@@ -31,7 +31,7 @@ public class Raz {
                 ", rocznik=" + rocznik +
                 '}';
     }
-    public char firstLetter(String marka){
+    public char firstLetter(){
         return marka.charAt(0);
     }
 }
