@@ -16,6 +16,9 @@ public class Main {
             System.out.print(tab[i] + " ");
         }
 
+        Raz raz2 = new Raz("Lupo", 2000);
+        System.out.println(raz2.rename());
+
         Raz raz1 = new Raz("auto1", 2010);
         System.out.println(raz1.firstLetter());
     }

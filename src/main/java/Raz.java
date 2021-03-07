@@ -34,4 +34,8 @@ public class Raz {
     public char firstLetter(){
         return marka.charAt(0);
     }
+
+    public String rename(){
+        return marka + " duo";
+    }
 }
