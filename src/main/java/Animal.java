@@ -3,4 +3,6 @@ public abstract class Animal {
     int age;
 
     public abstract double getAge();
+
+    public abstract String getString();
 }

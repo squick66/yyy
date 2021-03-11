@@ -8,4 +8,11 @@ public class Pies extends Animal {
     public double getAge() {
         return age;
     }
+
+    @Override
+    public String getString() {
+        return name;
+    }
+
+
 }
