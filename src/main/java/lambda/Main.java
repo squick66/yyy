@@ -26,22 +26,22 @@ public class Main {
         company.add(new People(751228, 46, "Arek", "Bracki"));
         company.add(new People(850315, 36, "Karolina", "Wicka"));
         company.add(new People(800618, 41, "Radek", "Mirecki"));
-        company.add(new People(900916, 31, "Kuba", "Del"));
+        company.add(new People( 900916, 31,"Kuba", "Del"));
 
        /* for (People el:company) {
             System.out.println(el);
         }*/
 
         System.out.println();
-        Collections.sort(company, new Comparator<People>() {
-            @Override
-            public int compare(People o1, People o2) {
-                return Integer.compare(o1.getAge(), o2.getAge());
-            }
-        });
+  Collections.sort(company, new Comparator<People>() {
+      @Override
+      public int compare(People o1, People o2) {
+          return Integer.compare(o1.getAge(), o2.getAge());
+      }
+  });
 
         Iterator<People> iter = company.iterator();
-        while (iter.hasNext()) {
+        while(iter.hasNext()){
             System.out.println(iter.next());
         }
 
@@ -54,7 +54,7 @@ public class Main {
         });
 
         Iterator<People> it = company.iterator();
-        while (it.hasNext()) {
+        while(it.hasNext()){
             System.out.println(it.next());
         }
         System.out.println();
@@ -67,7 +67,7 @@ public class Main {
         }));
 
         Iterator<People> iterat = company.iterator();
-        while (iterat.hasNext()) {
+        while(iterat.hasNext()){
             System.out.println(iterat.next());
         }
         System.out.println();
@@ -79,16 +79,21 @@ public class Main {
             }
         }));
         Iterator<People> iterator = company.iterator();
-        while (iterator.hasNext()) {
+        while(iterator.hasNext()){
             System.out.println(iterator.next());
         }
 
-        People people1 = new People(851225, 42, "Jurek", "Bla");
-        People people2 = new People(891225, 32, "Aurek", "Ala");
-        People people3 = new People(811225, 22, "Lurek", "La");
-        List<People> friends = new ArrayList<>(List.of(people1, people2, people3));
+
+        People people1 = new People(891225, 32, "Jurek", "Bala");
+        People people2 = new People(891225, 22, "Zurek", "Zala");
+        People people3 = new People(891225, 42, "Kuba", "Ala");
+        List<People> friends = new ArrayList<People>(List.of(people1,people2,people3));
 
         System.out.println(people1.equals(people2));
+        friends.addAll(company);
+        System.out.println(friends);
+        Collections.sort(friends, (o1, o2) -> Integer.compare(o1.getAge(),o2.getAge()));
+        System.out.println(friends);
 
         Collections.sort(friends, (People o1, People o2) ->
                 o1.getSurname().compareTo(o2.getSurname()));
